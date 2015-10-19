@@ -29,6 +29,7 @@ public class UserController {
 			{
 				model.addAttribute("username", username);
 				model.addAttribute("password", password);
+				model.addAttribute("userid",user.getId());
 				model.addAttribute("message", "Welcome, <font color=red>"+username+"</font>");
 				return "logined";
 			}
